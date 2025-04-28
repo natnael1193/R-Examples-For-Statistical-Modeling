@@ -1,0 +1,84 @@
+# Load the data
+```{r}
+load("./data/ratings.Rdata")
+```
+
+# Listing the data
+```{r}
+ls()
+```
+
+# Structure of rating
+```{r}
+str(ratings)
+```
+
+# Dimension
+```{r}
+dim(ratings)
+# Number of row
+nrow(ratings)
+# Number of columns
+ncol(ratings)
+
+```
+
+# Summary of rating
+```{r}
+summary(ratings$rating)
+rating <- ratings$rating
+```
+
+
+# Plot
+```{r}
+plot(rating, xlab="Rating", main = "Plot of rating")
+```
+
+# Mean
+```{r}
+mean(rating)
+```
+
+# Range
+```{r}
+range(rating)
+```
+
+# Median
+```{r}
+median(rating)
+```
+
+# 1st Quartile
+```{r}
+quantile(rating, 0.25)
+```
+
+# 3rd Quartile
+```{r}
+quantile(rating, 0.75)
+```
+
+# Box-Plot
+```{r}
+boxplot(rating, col = "red", main = "Box Plot")
+```
+
+# QQ-Plot
+```{r}
+qqnorm(rating)
+```
+
+# Ploting Profit per Capital
+```{r}
+plot(ratings$profit, rating, xlab="Profit", ylab="Rating", col="blue" ,
+ylim = c(-3, 80),
+xlim = c(0, 12)
+)
+```
+
+# Scatter Plot Matrix
+```{r}
+pairs(ratings)
+```

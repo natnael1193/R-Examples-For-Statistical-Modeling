@@ -1,0 +1,21 @@
+
+# Load the data
+```{r}
+load("./data/ratings.Rdata")
+```
+
+```{r}
+head(ratings)
+```
+
+# Computing correlations
+```{r}
+C <- cor(ratings)
+C
+```
+
+# Rounding the values
+```{r}
+round(C, 3)
+```
+

@@ -1,0 +1,11 @@
+# Load the data
+```{r}
+load("./data/ratings.Rdata")
+```
+
+# Compute Covariance
+```{r}
+S1 <- cov(ratings)
+S1
+```
+

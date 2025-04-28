@@ -1,0 +1,23 @@
+# Normal Distribution
+```{r}
+# Plot the standard normal distribution (mean = 0, sd = 1)
+x <- seq(-4, 4, length = 100)
+y <- dnorm(x, mean = 0, sd = 1)
+
+plot(x, y, type = "l", main = "Standard Normal Distribution", ylab = "Density")
+```
+
+```{r}
+# Generate 100 random values from N(0,1)
+samples <- rnorm(100, mean = 100, sd = 1)
+samples
+hist(samples, main = "Histogram of Random Normal Smaples", xlab = "Value")
+```
+
+
+```{r}
+# Probability at a Point
+pnorm(1.5, mean = 0, sd = 1)
+```
+
+

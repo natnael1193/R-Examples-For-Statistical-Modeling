@@ -1,0 +1,31 @@
+# Load the data
+```{r}
+load("./data/ratings.Rdata")
+```
+# Compute Covariance
+```{r}
+S1 <- cov(ratings)
+S1
+```
+# Installing packages
+```{r}
+install.packages("ggm")
+BiocManager::install("graph")
+require(ggm)
+```
+
+#  Computing Partial Correlation using ggm package
+```{r}
+C1<-parcor(S1)
+round(C1,3)
+```
+
+# Installing packages
+```{r}
+install.packages("corrplot")
+require(corrplot)
+```
+
+```{r}
+corrplot(C1, type = c("upper"))
+```
