@@ -1,0 +1,13 @@
+# Histogram
+```{r}
+hist(
+    y,
+    breaks = 50,
+    main = "Realized values from X - N(140, 36)",
+    xlab = "Value of X",
+    ylab = "Density",
+    xlim = c(105, 180),
+    prob = TRUE,
+    col = "yellow"
+)
+```

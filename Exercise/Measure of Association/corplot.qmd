@@ -5,7 +5,7 @@ load("./data/ratings.Rdata")
 
 #  Computing Partial Correlation using ggm package
 ```{r}
-C1<-parcor(S1)
+C1 <-  parcor(S1)
 round(C1,3)
 ```
 

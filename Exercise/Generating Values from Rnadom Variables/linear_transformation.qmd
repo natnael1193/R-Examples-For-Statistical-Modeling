@@ -1,0 +1,9 @@
+```{r}
+y <- 140 + 6 * z
+y
+```
+
+```{r}
+require(skimr)
+skimr::skim_without_charts(y)
+```

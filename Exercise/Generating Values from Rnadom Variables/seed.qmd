@@ -1,0 +1,18 @@
+# Generating Values from Random Variables
+
+```{r}
+# Set seed or generating random values
+set.seed(7369)
+
+# Number of values
+n <- 1000
+
+# Generate random values from standard normal distribution
+z <- rnorm(n, mean = 0 , sd = 1)
+z
+```
+
+```{r}
+require(skimr)
+skimr::skim_without_charts(z)
+```
