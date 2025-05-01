@@ -21,3 +21,18 @@ pnorm(1.5, mean = 0, sd = 1)
 ```
 
 
+```{r}
+set.seed(7369)
+n <- 1000
+z <- rnorm(n, mean = 0, sd = 1)
+z
+```
+
+```{r}
+install.packages("skimr")
+require(skimr)
+```
+
+```{r}
+skimr::skim_without_charts(z)
+```

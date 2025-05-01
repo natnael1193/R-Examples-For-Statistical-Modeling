@@ -1,0 +1,24 @@
+# Load the data
+```{r}
+load("./data/ratings.Rdata")
+```
+
+#  Computing Partial Correlation using ggm package
+```{r}
+C1<-parcor(S1)
+round(C1,3)
+```
+
+
+# Installing packages
+```{r}
+install.packages("corrplot")
+```
+
+```{r}
+require(corrplot)
+```
+
+```{r}
+corrplot(C1, type = c("upper"))
+```
